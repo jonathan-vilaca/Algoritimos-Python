@@ -1,0 +1,6 @@
+print("Calcule a área do quadrado:")
+l_a = input("Digite o valor do lado A: ")
+l_a = float(l_a)
+l_b = input("Digite o valor do lado B: ")
+l_b = float(l_b)
+print("A área do quadrado é: ", l_a*l_b)
