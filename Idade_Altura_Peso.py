@@ -13,19 +13,19 @@ altura3 = float(input("Insira a altura da pessoa 3:"))
 #Média das idades das pessoas acima de 20 anos.
 
 if idade1 > 20 and idade2 > 20 and idade3 > 20:
-    print("A média de idades acima de 20 anos é:", (idade1+idade2+idade3/3))
+    print("A média de idades acima de 20 anos é:", (idade1+idade2+idade3)/3)
 else:
     if idade1 > 20 and idade2 > 20 and idade3 < 20:
-        print("A média de idades acima de 20 anos é:", (idade1+idade2/2))
+        print("A média de idades acima de 20 anos é:", (idade1+idade2)/2)
     else:
         if idade1 > 20 and idade2 < 20 and idade3 < 20:
             print("A média de idades acima de 20 anos é:", idade1)
         else:
             if idade1 > 20 and idade2 < 20 and idade3 > 20:
-                print("A média de idades acima de 20 anos é:", (idade1+idade3/2))
+                print("A média de idades acima de 20 anos é:", (idade1+idade3)/2)
             else:
                 if idade1 < 20 and idade2 > 20 and idade3 > 20:
-                    print("A média de idades acima de 20 anos é:", (idade2+idade3/2))
+                    print("A média de idades acima de 20 anos é:", (idade2+idade3)/2)
                 else:
                     if idade1 < 20 and idade2 < 20 and idade3 > 20:
                         print("A média de idades acima de 20 anos é:", idade3)
