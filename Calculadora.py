@@ -17,4 +17,3 @@ else:
         else:
             if sinal == "/":
                 print("Resultado é:", numero_a / numero_b)
-
