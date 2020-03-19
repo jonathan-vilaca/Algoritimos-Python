@@ -1,7 +1,4 @@
-print("Calcule a área do quadrado:")
-lado_a = input("Informe o valor do lado A: ")
-lado_b = input("Informe o valor do lado B: ")
-lado_a = float(lado_a)
-lado_b = float(lado_b)
-area = lado_a * lado_b
-print("O valor da área do quadrado é:", area,"cm2")
+print("Calcule a área do quadrilátero (em cm):")
+lado_a = float(input("Informe o valor do lado A: "))
+lado_b = float(input("Informe o valor do lado B: "))
+print(f"O valor da área do quadrado é: {lado_a*lado_b}cm²")
