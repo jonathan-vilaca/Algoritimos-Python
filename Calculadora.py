@@ -1,7 +1,7 @@
 print("CALCULADORA")
-numero_a = int(input("Insira um numero: "))
+numero_a = float(input("Insira um numero: "))
 sinal = input("Insira o sinal da operacao: ")
-numero_b = int(input("Insira o segundo numero: "))
+numero_b = float(input("Insira o segundo numero: "))
 
 if (sinal != "+") and (sinal != "-") and (sinal != "*") and (sinal != "/"):
     print("Insira apenas sinais de operação básica")
