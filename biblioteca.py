@@ -77,6 +77,7 @@ def devolucao_de_livros():
     if devolucao in livros_emprestados:
         livros_emprestados.remove(devolucao)
         livros_disponiveis.append(devolucao)
+        reinicio()
     else:
         print("Este livro não pertence a esta biblioteca!")
         reinicio()
