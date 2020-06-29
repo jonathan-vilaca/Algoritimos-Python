@@ -1,4 +1,4 @@
-livros_disponíveis = []
+livros_disponiveis = []
 livros_emprestados = []
 usuarios = []
 bibliotecarios = []
@@ -46,7 +46,7 @@ def usuario():
 
 def livros():
     novo_livro = input("Insira o nome do novo livro: ")
-    livros_disponíveis.append(novo_livro)
+    livros_disponiveis.append(novo_livro)
     print("Livro cadastrado com sucesso!")
     reinicio()
 
@@ -60,7 +60,7 @@ def novos_bibliotecarios():
 
 def emprestimo_livro():
     emprestimo = input("Qual livro será emprestado? ")
-    livros_disponíveis.remove(emprestimo)
+    livros_disponiveis.remove(emprestimo)
     livros_emprestados.append(emprestimo)
     reinicio()
 
@@ -68,7 +68,7 @@ def devolucao_de_livros():
     devolucao = input("Qual livro será devolvido? ")
     if devolucao in livros_emprestados:
         livros_emprestados.remove(devolucao)
-        livros_disponíveis.append(devolucao)
+        livros_disponiveis.append(devolucao)
     else:
         print("Este livro não pertence a esta biblioteca!")
         reinicio()
@@ -77,7 +77,7 @@ def devolucao_de_livros():
 def relatorio_completo():
     print(f'Os livros de nosso acervo são:')
     print("")
-    print(f"{livros_disponíveis} estão disponíveis para empréstimo")
+    print(f"{livros_disponiveis} estão disponíveis para empréstimo")
     print("")
     print(f"E estes: {livros_emprestados}, não estão disponíveis para empréstimos pois já estão emprestados.")
 
