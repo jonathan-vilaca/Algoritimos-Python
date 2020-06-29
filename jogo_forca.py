@@ -2,7 +2,7 @@ erros = []
 acertos = []
 palavra = 'jonathan'
 
-#Função para mostrar se a letra existe na palavra, exibe quais letras já foram chutadas (separadas por certas e erradas)
+#Função para mostrar se a letra existe na palavra. Exibe quais letras já foram chutadas (separadas por certas e erradas)
 
 def forca(tent):
     if tent in palavra:
@@ -53,8 +53,18 @@ print(f"A palavra certa é: {palavra}")
 print("-" * 30)
 print("")
 
-novamente = input("Deseja jogar novamente? (S) ou (N) ")
-if novamente == 's':
-    game()
-else:
-    exit()
+
+def reiniciar():
+    novamente = input("Deseja jogar novamente? (S) ou (N) ")
+    if novamente == 's':
+        game()
+    elif novamente == 'n':
+        exit()
+    else:
+        print("")
+        print("Insira (s) para SIM ou (n) para NÃO: ")
+        print('')
+        reiniciar()
+
+
+reiniciar()
