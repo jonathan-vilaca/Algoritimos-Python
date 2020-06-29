@@ -19,7 +19,7 @@ def forca(tent):
         print('Letras erradas ', erros)
         print("")
 
-#função para reiniciar o jogo. Possui tambem alternativa de poder chutar a palavra toda e exibir a quantidade de tentativas restantes
+#Função para mostrar a alternativa de poder chutar a palavra toda e exibir a quantidade de tentativas restantes
 
 def game():
     jogadas = 10
@@ -53,6 +53,7 @@ print(f"A palavra certa é: {palavra}")
 print("-" * 30)
 print("")
 
+#Função para reiniciar o jogo caso o usuário queira.
 
 def reiniciar():
     novamente = input("Deseja jogar novamente? (S) ou (N) ")
