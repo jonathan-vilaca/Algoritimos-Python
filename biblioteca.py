@@ -41,6 +41,7 @@ def usuario():
     novo_usuario = input("Insira o nome do novo usuário: ")
     usuarios.append(novo_usuario)
     print("Usuário cadastrado com sucesso!")
+    print(f'Os usuários cadastrados são: {usuarios}')
     reinicio()
 
 
@@ -60,9 +61,16 @@ def novos_bibliotecarios():
 
 def emprestimo_livro():
     emprestimo = input("Qual livro será emprestado? ")
-    livros_disponiveis.remove(emprestimo)
-    livros_emprestados.append(emprestimo)
-    reinicio()
+    if emprestimo in livros_disponiveis:
+        livros_disponiveis.remove(emprestimo)
+        livros_emprestados.append(emprestimo)
+        reinicio()
+    elif emprestimo in livros_emprestados:
+        print("Livro se encontra emprestado!")
+        reinicio()
+    else:
+        print("Livro não se encontra no acervo!")
+        reinicio()
 
 def devolucao_de_livros():
     devolucao = input("Qual livro será devolvido? ")
@@ -80,6 +88,7 @@ def relatorio_completo():
     print(f"{livros_disponiveis} estão disponíveis para empréstimo")
     print("")
     print(f"E estes: {livros_emprestados}, não estão disponíveis para empréstimos pois já estão emprestados.")
+    reinicio()
 
 
 def servico():
