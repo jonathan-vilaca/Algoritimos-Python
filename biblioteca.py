@@ -25,6 +25,7 @@ opcoes()
 
 
 def reinicio():
+    print("")
     resposta = input("Deseja mais alguma coisa? (S) ou (N) ")
     if resposta.upper() == 'S':
         opcoes()
@@ -38,6 +39,7 @@ def reinicio():
 
 
 def usuario():
+    print("")
     novo_usuario = input("Insira o nome do novo usuário: ")
     usuarios.append(novo_usuario)
     print("Usuário cadastrado com sucesso!")
@@ -46,6 +48,7 @@ def usuario():
 
 
 def livros():
+    print("")
     novo_livro = input("Insira o nome do novo livro: ")
     livros_disponiveis.append(novo_livro)
     print("Livro cadastrado com sucesso!")
@@ -53,6 +56,7 @@ def livros():
 
 
 def novos_bibliotecarios():
+    print("")
     novo_biblio = input("Insira o nome do novo bibliotecário: ")
     bibliotecarios.append(novo_biblio)
     print("Bibliotecário cadastrado com sucesso!")
@@ -60,6 +64,7 @@ def novos_bibliotecarios():
 
 
 def emprestimo_livro():
+    print("")
     emprestimo = input("Qual livro será emprestado? ")
     if emprestimo in livros_disponiveis:
         livros_disponiveis.remove(emprestimo)
@@ -73,6 +78,7 @@ def emprestimo_livro():
         reinicio()
 
 def devolucao_de_livros():
+    print("")
     devolucao = input("Qual livro será devolvido? ")
     if devolucao in livros_emprestados:
         livros_emprestados.remove(devolucao)
