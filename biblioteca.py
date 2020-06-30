@@ -18,7 +18,7 @@ def opcoes():
     print("Cadastro de novos bibliotecários? Digite 3")
     print("Empréstimos de livros? Digite 4")
     print("Devolução de livros? Digite 5")
-    print("Relatório de livros emprestasdos e disponíveis? Digite 6")
+    print("Relatório Geral? Digite 6")
     print("")
 
 opcoes()
@@ -84,11 +84,15 @@ def devolucao_de_livros():
 
 
 def relatorio_completo():
-    print(f'Os livros de nosso acervo são:')
     print("")
-    print(f"{livros_disponiveis} estão disponíveis para empréstimo")
+    print(f"Os livros: {livros_disponiveis} estão disponíveis para empréstimo")
     print("")
     print(f"E estes: {livros_emprestados}, não estão disponíveis para empréstimos pois já estão emprestados.")
+    print("")
+    print(f"Os usuários registrados são: {usuarios}")
+    print("")
+    print(f"Os bibliotecários registrados são: {bibliotecarios}")
+    print("")
     reinicio()
 
 
