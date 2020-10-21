@@ -1,8 +1,8 @@
 print("Inverta os valores de A e B:")
-v_a = input("Valor de A: ")
-v_b = input("valor de B: ")
-v_c = v_a
-v_a = v_b
-v_b = v_c
+valor_a = input("Valor de A: ")
+valor_b = input("valor de B: ")
+reserva = valor_a
+valor_a = valor_b
+valor_b = reserva
 
-print("Valor de A:", v_a, "Valor de B: ", v_b)
+print("Valor de A:", valor_a, "Valor de B: ", valor_b)
