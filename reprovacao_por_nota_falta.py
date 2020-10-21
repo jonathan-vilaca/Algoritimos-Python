@@ -11,9 +11,9 @@ nota3 = int(input("Insira a terceira nota:"))
 faltas = int(input("Insira seu número de faltas:"))
 
 if (nota1 + nota2 + nota3) / 3 >= 7 and faltas < 80*25/100 :
-    print("APROVADO!")
+    print(f" O ALUNO {aluno} FOI APROVADO!")
 else:
     if faltas >= 80*25/100:
-        print("REPROVADO POR FALTA!")
+        print(f" O ALUNO {aluno} FOI REPROVADO POR FALTA!")
     else:
-        print ("REPROVADO")
+        print (f" O ALUNO {aluno} FOI REPROVADO POR NOTA!")
